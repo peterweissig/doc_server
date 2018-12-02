@@ -1,0 +1,13 @@
+Main domain
+    <my_domain_name>.de
+
+
+Subdomain
+    cloud.<my_domain_name>.de
+    mail.<my_domain_name>.de
+
+
+Alternativ url (within provider domain)
+    <server_url>
+
+    e.g. <my_server_name>.premium-vserver.net
