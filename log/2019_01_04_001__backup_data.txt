@@ -1,0 +1,61 @@
+Problem:
+    Upate of nextcloud and imscp recommends backing up data.
+
+Sidenote:
+    Imscp backs up mail, databases and web automaticaly (daily).
+    Email and databases are small enough to be backed up twice.
+    But webspace backup is too big - this will be turned off soon.
+      (see file "2019_01_04_003__restrict_backups.txt")
+
+Solution:
+    Manually back up webspace (without data and backup) and email.
+    (Databases might be backed up later.)
+
+###########################################################################
+
+0. check remaining size of server
+    $ df -h .
+
+1. create (additional) backup of email
+  a) set variables
+    $ src_path=/var/mail/virtual/
+    $ dest_path=~/backup/mail/
+    $ dest_file="$(date +"%Y_%m_%d_mail").tar.bz2"
+
+  b) check size of emails
+    $ du -sh "${src_path}"
+
+  c) simple backup, since there is not much going on
+    $ mkdir -p "${dest_path}"
+    $ cd / && tar -cj -f "${dest_path}${dest_file}" "${src_path:1}"
+
+  d) check size of backup
+    $ cd "${dest_path}"
+    $ du -h "${dest_file}"
+
+2. create backup of webspace
+  a) set variables
+    $ src_path=/var/www/virtual/
+    $ dest_path=~/backup/www/
+    $ dest_file="$(date +"%Y_%m_%d_www")"
+    $ dest_fileext=".tar.bz2"
+
+  b) check size of webspace
+    $ du -h -d1 "${src_path}"
+    $ rsync -ah --dry-run --stats \
+      --exclude='/*/backups/' --exclude='*/htdocs/data/' \
+      "${src_path}" "${dest_path}${dest_file}"
+
+  c) rsync files
+    $ mkdir -p "${dest_path}${dest_file}"
+      # run rsync again without "--dry-run"
+
+  d) compress files
+    $ cd "${dest_path}"
+    $ tar -cj -f "${dest_file}${dest_fileext}" "${dest_file}" && rm -r "${dest_file}"
+
+  e) check size of backup
+    $ cd "${dest_path}"
+    $ du -h "${dest_file}${dest_fileext}"
+
+3. done :-)
