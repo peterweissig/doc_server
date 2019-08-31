@@ -21,3 +21,9 @@ Username on filesystem
 
     e.g. vu2042
 
+
+Emailadress of admin
+    <mail>
+
+    e.g. mail.admin@web.de
+
