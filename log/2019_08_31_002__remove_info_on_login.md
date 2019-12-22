@@ -1,9 +1,17 @@
-Problem:
-    On ssh-login there are always hints how to install imscp.
+# 2019 08 31 remove info on login
 
-Solution:
-    Remove hints from info-page.
+[go back to server overview](../doc/server.md#login)
 
-###########################################################################
+## Problem
+On ssh-login there are always hints how to install imscp.
 
-$ sudo nano /etc/motd
+
+## Solution
+Remove hints from info-page.
+
+
+## Steps
+
+~~~~~
+    $ sudo nano /etc/motd
+~~~~~
