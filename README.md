@@ -16,7 +16,7 @@ Currently the server is running on virtualmin (based on webmin and usermin).
 
 https://www.virtualmin.com/
 
-[doc/virtualmin.md](doc/virtual.md)
+[doc/virtualmin.md](doc/virtualmin.md)
 
 ### imscp
 In the beginning the server was running on imscp, as it was already prepared from ip-projects. \
