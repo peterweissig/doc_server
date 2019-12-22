@@ -1,6 +1,6 @@
 # 2018 11 21 install certbot
 
-[go back to server overview](../doc/server.md)
+[go back to server overview](../doc/server.md#letsencrypt)
 
 ## Info
 * https://letsencrypt.org/
