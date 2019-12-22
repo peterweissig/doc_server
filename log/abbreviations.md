@@ -1,29 +1,36 @@
-Main domain
-    <my_domain_name>.de
+# Abbreviations
 
-    e.g. example ==> example.de
+## Main domain
 
+**<<my_domain_name>>**.de
 
-Subdomain
-    <subdomain>.<my_domain_name>.de
-
-    e.g. mail ==> mail.example.de
+e.g. example ==> example.de
 
 
-Alternativ url (within provider domain)
-    <server_url>
+## Subdomain
 
-    e.g. <my_server_name>.premium-vserver.net
+**<<subdomain>>**.<<my_domain_name>>.de
 
-
-Username on filesystem
-    <username>
-
-    e.g. vu2042
+e.g. mail ==> mail.example.de
 
 
-Emailadress of admin
-    <mail>
+## Alternative url
+This url is set within provider domain.
 
-    e.g. mail.admin@web.de
+**<<server_url>>**
 
+e.g. <<my_server_name>>.premium-vserver.net
+
+
+## Username on filesystem
+
+**<<username>>**
+
+e.g. vu2042
+
+
+## Emailadress of admin
+
+**<<mail>>**
+
+e.g. mail.admin@web.de
