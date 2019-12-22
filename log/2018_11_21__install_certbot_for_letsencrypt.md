@@ -2,14 +2,16 @@
 
 [go back to server overview](../doc/server.md#letsencrypt)
 
+
 ## Info
 * https://letsencrypt.org/
 * https://certbot.eff.org/lets-encrypt/debianstretch-other
 * https://backports.debian.org/Instructions/
 
+
 ## Steps
 
-1. update sources list
+### 1. update sources list
 
 ~~~~~
     $ cd /etc/apt/
@@ -32,14 +34,14 @@
         ... deb-src https://packages.sury.org/php/ stretch main
 ~~~~~
 
-2. update apt
+### 2. update apt
 
 ~~~~~
     $ apt-get update
     $ apt-get upgrade
 ~~~~~
 
-3. install certbot
+### 3. install certbot
 
 ~~~~~
     $ apt-get install certbot -t stretch-backports

@@ -2,6 +2,7 @@
 
 [go back to server overview](../doc/server.md#letsencrypt)
 
+
 ## Steps
 
 ### 1. Running Certbot for the first time.
@@ -64,7 +65,6 @@ set all necessary settings
         Donating to EFF:                    https://eff.org/donate-le
 ~~~~~
 
-
 ### 2. Deactivate website afterwards
 
 ~~~~~
@@ -76,7 +76,6 @@ set all necessary settings
     #    $ /etc/init.d/apache2 restart
 ~~~~~
 
-
 ### 3. Update certificates on imscp
 _This is deprecated and was only needed for imscp._
 
@@ -87,3 +86,7 @@ _This is deprecated and was only needed for imscp._
     $ /var/www/imscp/engine/setup/imscp-reconfigure --reconfigure services_ssl
         # tons of questions ...
 ~~~~~
+
+
+## other
+[abbreviations](../log/abbreviations.md)

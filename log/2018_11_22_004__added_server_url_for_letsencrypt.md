@@ -13,7 +13,8 @@ Added an other virtual host for alternative server url.
 
 
 ## Steps
-1. create new site
+
+### 1. create new site
 
 ~~~~~
     $ cd /etc/apache2/sites-available
@@ -21,7 +22,7 @@ Added an other virtual host for alternative server url.
         # for added content see below
 ~~~~~
 
-2. enabele new site
+### 2. enable new site
 
 ~~~~~
     $ a2ensite [[server_url]]
@@ -56,5 +57,5 @@ Added an other virtual host for alternative server url.
 ~~~~~
 
 
-### other
+## other
 [abbreviations](../log/abbreviations.md)
