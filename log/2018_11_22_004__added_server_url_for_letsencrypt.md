@@ -15,26 +15,26 @@ Added an other virtual host for alternative server url.
 ## Steps
 1. create new site
 
-    ```
+~~~~~
     $ cd /etc/apache2/sites-available
     $ nano [[server_url]].conf
         # for added content see below
-    ```
+~~~~~
 
 2. enabele new site
 
-    ```
+~~~~~
     $ a2ensite [[server_url]]
 
     # old behaviour (bad)
     #    $ cd /etc/apache2/sites-enabled
     #    $ ln -s ../sites-available/[[server_url]].conf ./
-    ```
+~~~~~
 
 
 ## file content
 
-    ```
+~~~~~
     <VirtualHost [[my_ip]]:80>
         ServerAdmin webmaster@[[server_url]]
         ServerName [[server_url]]
@@ -53,7 +53,7 @@ Added an other virtual host for alternative server url.
         #Redirect permanent / https://[[server_url]]/
 
     </VirtualHost>
-    ```
+~~~~~
 
 
 ### other

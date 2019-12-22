@@ -10,7 +10,8 @@
 ## Steps
 
 1. update sources list
-    ```
+
+~~~~~
     $ cd /etc/apt/
     $ nano sources.list
         ... deb http://mirror.ip-projects.de/debian stretch main non-free contrib
@@ -29,17 +30,17 @@
         ...
         ... deb https://packages.sury.org/php/ stretch main
         ... deb-src https://packages.sury.org/php/ stretch main
-    ```
+~~~~~
 
 2. update apt
 
-    ```
+~~~~~
     $ apt-get update
     $ apt-get upgrade
-    ```
+~~~~~
 
 3. install certbot
 
-    ```
+~~~~~
     $ apt-get install certbot -t stretch-backports
-    ```
+~~~~~

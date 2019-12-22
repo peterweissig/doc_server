@@ -7,13 +7,13 @@
 ### 1. Running Certbot for the first time.
 run _certbot_
 
-    ```
+~~~~~
     $ certbot certonly
-    ```
+~~~~~
 
 set all necessary settings
 
-    ```
+~~~~~
         How would you like to authenticate with the ACME CA?
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         1: Spin up a temporary webserver (standalone)
@@ -62,28 +62,28 @@ set all necessary settings
 
         Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
         Donating to EFF:                    https://eff.org/donate-le
-    ```
+~~~~~
 
 
 ### 2. Deactivate website afterwards
 
-    ```
+~~~~~
     $ a2dissite [[server_url]]
     $ service apache2 restart
 
     # old behaviour (bad)
     #    $ rm /etc/apache2/sites-enabled/[[server_url]].conf
     #    $ /etc/init.d/apache2 restart
-    ```
+~~~~~
 
 
 ### 3. Update certificates on imscp
 _This is deprecated and was only needed for imscp._
 
-    ```
+~~~~~
     $ /var/www/imscp/engine/setup/imscp-reconfigure --reconfigure help
     $ /var/www/imscp/engine/setup/imscp-reconfigure --reconfigure panel_ssl
         # tons of questions ...
     $ /var/www/imscp/engine/setup/imscp-reconfigure --reconfigure services_ssl
         # tons of questions ...
-    ```
+~~~~~
