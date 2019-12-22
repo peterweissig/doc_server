@@ -22,6 +22,13 @@ This url is set within provider domain.
 e.g. [[my_server_name]].premium-vserver.net
 
 
+## IP-Adress
+
+**[[my_ip]]**
+
+e.g. 192.168.1.1
+
+
 ## Username on filesystem
 
 **[[username]]**
