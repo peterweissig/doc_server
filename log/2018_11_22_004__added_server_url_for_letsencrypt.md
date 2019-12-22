@@ -1,38 +1,60 @@
-Problem:
-    Direct access to main directory (/var/www/html) is not possible.
-    But this is needed for letsencrypt to create a new certificate.
+# 2018 11 22 added server url for letsencrypt
 
-Solution:
-    Added an other virtual host for alternativ server url.
+[go back to server overview](../doc/server.md#letsencrypt)
 
-###########################################################################
 
-$ cd /etc/apache2/sites-available
-$ nano <server_url>.conf
-    # for added content see below
+## Problem
+Direct access to main directory (/var/www/html) is not possible. \
+But this is needed for letsencrypt to create a new certificate.
 
-$ cd /etc/apache2/sites-enabled
-$ ln -s ../sites-available/<server_url>.conf ./
 
-###########################################################################
-# file content
+## Solution
+Added an other virtual host for alternative server url.
 
-<VirtualHost <my_ip>:80>
-    ServerAdmin webmaster@<server_url>
-    ServerName <server_url>
-    ServerAlias www.<server_url>
-    DocumentRoot /var/www/html
-    DirectoryIndex disabled
-    LogLevel error
-    ErrorLog /var/log/apache2/<server_url>/error.log
-    <Directory /var/www/html>
-        Options FollowSymLinks
-        AllowOverride AuthConfig Indexes Limit Options=Indexes,MultiViews \
-            Fileinfo=RewriteEngine,RewriteOptions,RewriteBase,RewriteCond,RewriteRule Nonfatal=Override
-        Require all granted
-    </Directory>
 
-    #Redirect permanent / https://<server_url>/
+## Steps
+1. create new site
 
-</VirtualHost>
+    ```
+    $ cd /etc/apache2/sites-available
+    $ nano [[server_url]].conf
+        # for added content see below
+    ```
 
+2. enabele new site
+
+    ```
+    $ a2ensite [[server_url]]
+
+    # old behaviour (bad)
+    #    $ cd /etc/apache2/sites-enabled
+    #    $ ln -s ../sites-available/[[server_url]].conf ./
+    ```
+
+
+## file content
+
+    ```
+    <VirtualHost [[my_ip]]:80>
+        ServerAdmin webmaster@[[server_url]]
+        ServerName [[server_url]]
+        ServerAlias www.[[server_url]]
+        DocumentRoot /var/www/html
+        DirectoryIndex disabled
+        LogLevel error
+        ErrorLog /var/log/apache2/[[server_url]]/error.log
+        <Directory /var/www/html>
+            Options FollowSymLinks
+            AllowOverride AuthConfig Indexes Limit Options=Indexes,MultiViews \
+                Fileinfo=RewriteEngine,RewriteOptions,RewriteBase,RewriteCond,RewriteRule Nonfatal=Override
+            Require all granted
+        </Directory>
+
+        #Redirect permanent / https://[[server_url]]/
+
+    </VirtualHost>
+    ```
+
+
+### other
+[abbreviations](../log/abbreviations.md)
