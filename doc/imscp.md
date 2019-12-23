@@ -35,7 +35,8 @@
 [2018 11 25 fixed mysql root login](../log/2018_11_25__fixed_debian_login_mysql.md)
 
 #### php
-[2019 update php](../log/2019__php_update.md)
+[2019 update php](../log/2019__php_update.md) \
+[2019 04 18 config php for nextcloud](../log/2019_04_18__config_php_for_nextcloud.md)
 
 
 ### other

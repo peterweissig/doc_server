@@ -28,6 +28,8 @@
 
 [2019 01 25 fix frozen update](2019_01_25__fix_frozen_nextcloud_update.md)
 
+[2019 04 18 config php for nextcloud](2019_04_18__config_php_for_nextcloud.md)
+
 [2019 08 31 disable login via password](2019_08_31_001__disable_login_via_password.md) \
 [2019 08 31 remove info on login](2019_08_31_002__remove_info_on_login.md) \
 [2019 08 31 try autoupdate imscp-certificate](2019_08_31_003__autoupdate_imscp_certificate.md)
