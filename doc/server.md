@@ -15,6 +15,9 @@
 [2018 11 22 ssl forwarding](../log/2018_11_22_001__added_ssl_forwarding.md) \
 [2018 11 23 correct ssl forwarding](../log/2018_11_23_001__correct_forwarding.md)
 
+#### forwarding
+[2018 11 22 default website](../log/2018_11_22_003__fixed_default_forwarding.md)
+
 
 ### certificates
 

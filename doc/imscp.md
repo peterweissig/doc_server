@@ -5,6 +5,7 @@
 
 ### websites
 #### forwarding
+[2018 11 22 default website](../log/2018_11_22_003__fixed_default_forwarding.md)
 [2018 11 23 using proxy forwarding](../log/2018_11_23_002__using_proxy_forwarding.md)
 
 #### ssl
