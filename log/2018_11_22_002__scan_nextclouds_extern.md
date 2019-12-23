@@ -1,6 +1,6 @@
 # 2018 11 22 scan extern
 
-[go back to imscp overview](../doc/nextcloud.md)
+[go back to nextcloud overview](../doc/nextcloud.md)
 
 
 ## Info

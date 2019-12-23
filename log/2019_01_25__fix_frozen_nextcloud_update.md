@@ -1,6 +1,6 @@
 # 2019 01 25 fix frozen update
 
-[go back to imscp overview](../doc/nextcloud.md)
+[go back to nextcloud overview](../doc/nextcloud.md)
 
 
 ## Problem
