@@ -28,3 +28,6 @@ Force processing of main domain before subdomains.
     $ ln -s ../sites-available/[[my_domain_name]].de_ssl.conf 06_default_ssl.conf
 ~~~~~
 
+
+## other
+[abbreviations](../log/abbreviations.md)
