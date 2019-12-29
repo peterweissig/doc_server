@@ -5,8 +5,8 @@
 
 ### nextcloud
 [2018 11 22 scan extern](../log/2018_11_22_002__scan_nextclouds_extern.md) \
-[2019 01 25 fix frozen update](../log/2019_01_25__fix_frozen_nextcloud_update.md)
-
+[2019 01 25 fix frozen update](../log/2019_01_25__fix_frozen_nextcloud_update.md) \
+[2019 12 29 fix locked files](../log/2019_12_29__fix_locked_files_on_nextcloud.md)
 
 ### server
 [2019 update php](../log/2019__php_update.md) \
