@@ -34,6 +34,8 @@
 [2019 08 31 remove info on login](2019_08_31_002__remove_info_on_login.md) \
 [2019 08 31 try autoupdate imscp-certificate](2019_08_31_003__autoupdate_imscp_certificate.md)
 
+[2019 12 23 install nextcloud under virtualmin](2019_12_23__install_nextcloud_under_virtualmin.md)
+
 
 ### other
 [abbreviations](abbreviations.md)
